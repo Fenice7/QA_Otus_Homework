@@ -9,4 +9,14 @@ public interface ServerConfig extends Config {
     @Key("url")
     String url();
 
+    @Key("yandexMarket")
+    String yandexMarket();
+
+    @Key("skills")
+    String skills();
+    @Key("email")
+    String email();
+    @Key("psw")
+    String psw();
+
 }
