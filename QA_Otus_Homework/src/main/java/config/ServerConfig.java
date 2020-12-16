@@ -6,16 +6,18 @@ import org.aeonbits.owner.Config.Sources;
 @Sources("classpath:config.properties")
 public interface ServerConfig extends Config {
 
-    @Key("url")
-    String url();
+    @Key("otusUrl")
+    String otusUrl();
 
     @Key("yandexMarket")
     String yandexMarket();
 
-    @Key("skills")
-    String skills();
+    @Key("otusLkAbout")
+    String otusLkAbout();
+
     @Key("email")
     String email();
+
     @Key("psw")
     String psw();
 
