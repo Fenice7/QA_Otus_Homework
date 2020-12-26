@@ -28,7 +28,7 @@ public class TestClass {
 
     @Test
     public void openPage() {
-        driver.get(cfg.url());
+        driver.get(cfg.otusUrl());
         logger.info("Открыта страница отус");
         driver.getTitle().equals("Онлайн‑курсы для профессионалов, дистанционное обучение современным профессиям");
         logger.info("Проверка title страницы");
