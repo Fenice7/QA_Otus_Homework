@@ -1,6 +1,7 @@
 package pages.yandex;
 
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -28,7 +29,6 @@ public class YandexMarketPage {
     private By favorites = By.xpath("//div[@data-zone-name='snippetWishlistToggler']");
     private By firstArticle = By.xpath("//div[@data-zone-name='SearchResults']//article[1]//h3");
     private By buttonCompare = By.xpath("//*[text()='Сравнить']");
-
 
     public void jumpToElectronSection() {
         driver.findElement(electron).click();

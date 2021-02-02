@@ -2,6 +2,7 @@ package cucumber.pages;
 
 import config.ServerConfig;
 import cucumber.driver.Driver;
+import io.qameta.allure.Step;
 import org.aeonbits.owner.ConfigFactory;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -24,6 +25,7 @@ public class MainPage {
         driver = Driver.getDriver();
     }
 
+
     public void openSite() {
         driver.get(cfg.otusUrl());
         logger.info("Открытие главной страницы сайта");
@@ -35,6 +37,7 @@ public class MainPage {
         assertThat(driver.getTitle(), containsString("Онлайн‑курсы для профессионалов, дистанционное обучение современным профессиям"));
         logger.info("Проверка актуального title");
     }
+
 
     public void clickOnRegisterButton() {
         driver.findElement(By.cssSelector(".header2__auth")).click();

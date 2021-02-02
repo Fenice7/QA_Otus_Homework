@@ -1,5 +1,6 @@
 import config.ServerConfig;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import io.qameta.allure.Step;
 import manager.Browsers;
 import manager.WebDriverFactory;
 import org.aeonbits.owner.ConfigFactory;
@@ -27,6 +28,7 @@ public class TestClass {
     }
 
     @Test
+
     public void openPage() {
         driver.get(cfg.otusUrl());
         logger.info("Открыта страница отус");

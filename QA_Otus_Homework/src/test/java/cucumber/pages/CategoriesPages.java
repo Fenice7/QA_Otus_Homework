@@ -30,6 +30,7 @@ public class CategoriesPages {
         logger.info("Сравнение значений");
     }
 
+
     public void checkPageHeadline(String section) {
         String actualHeadline = new WebDriverWait(driver, 5)
                 .until(ExpectedConditions.presenceOfElementLocated(By.tagName("h1"))).getText();
