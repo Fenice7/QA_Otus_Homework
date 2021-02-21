@@ -5,7 +5,6 @@ import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
-
 import java.util.Map;
 
 import static io.restassured.RestAssured.given;
@@ -13,7 +12,6 @@ import static org.hamcrest.Matchers.lessThan;
 
 public class BaseUser {
 
-    //    Map<String, Object> user = new HashMap<>();
     Map<String, Object> user;
 
     private static final String BASE_URL = "https://petstore.swagger.io/v2";
@@ -47,11 +45,4 @@ public class BaseUser {
                 .when()
                 .get(BASE_PATH + "/" + username);
     }
-
-    public Response deleteUser(String username) {
-        return given(requestSpecification)
-                .when()
-                .delete(BASE_PATH + "/" + username);
-    }
-
 }

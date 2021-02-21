@@ -75,13 +75,6 @@
             <version>${cucumber.version}</version>
         </dependency>
 
-<!--        &lt;!&ndash; https://mvnrepository.com/artifact/io.cucumber/cucumber-spring &ndash;&gt;-->
-<!--        <dependency>-->
-<!--            <groupId>io.cucumber</groupId>-->
-<!--            <artifactId>cucumber-spring</artifactId>-->
-<!--            <version>6.9.0</version>-->
-<!--        </dependency>-->
-
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-api</artifactId>
