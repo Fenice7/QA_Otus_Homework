@@ -62,7 +62,7 @@ pipeline {
                     emailext body: "${message}",
                         recipientProviders: [[$class: 'DevelopersRecipientProvider'], [$class: 'RequesterRecipientProvider']],
                         subject: "Jenkins Build ${currentBuild.currentResult}: Job ${env.JOB_NAME}",
-                        to: 'fenicemail1@gmail.com'
+                        to: 'tralivali.vali@yandex.ua'
 
                     // Отправка результатов В slack
                     slackSend(
