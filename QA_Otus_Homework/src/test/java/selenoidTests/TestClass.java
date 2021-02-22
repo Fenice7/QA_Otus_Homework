@@ -32,7 +32,7 @@ public class TestClass {
         caps.setVersion("88.0");
         caps.setCapability("enableVNC", true);
         caps.setCapability("screenResolution", "1920x1080");
-        caps.setCapability("enableVideo", true);
+        caps.setCapability("enableVideo", false);
         caps.setCapability("enableLog", true);
 
         driver = new RemoteWebDriver(new URL(selenoidURL), caps);
