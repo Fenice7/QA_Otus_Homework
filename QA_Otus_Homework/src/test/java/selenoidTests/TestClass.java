@@ -26,7 +26,7 @@ public class TestClass {
 //        driver = new ChromeDriver();
 //        driver = WebDriverFactory.createDriver(Browsers.CHROME);
 //        driver.manage().window().maximize();
-        String selenoidURL = "http://localhost:4444/wd/hub";
+        String selenoidURL = "http://195.178.20.182:4444/wd/hub";
         DesiredCapabilities caps = new DesiredCapabilities();
         caps.setBrowserName("chrome");
         caps.setVersion("88.0");
